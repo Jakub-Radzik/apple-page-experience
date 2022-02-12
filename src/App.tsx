@@ -1,24 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { CanvasScrollAnimation } from './Components/AirPodsCanvas/CanvasScrollAnimation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <CanvasScrollAnimation frameCount={147} link={'https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/'}/>
     </div>
   );
 }
